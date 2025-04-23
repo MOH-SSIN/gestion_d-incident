@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion d'incidente - Connexion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-icon">
+                <div class="logo-square"></div>
+                <div class="logo-square"></div>
+            </div>
+            <div class="logo-text">Gestion D'incidente</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="service.html"><i class="fas fa-cogs"></i> Service</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="main-container">
+        <div class="login-container">
+            <div class="login-form">
+                <div class="inner-logo">
+                    <div class="logo-icon">
+                        <div class="logo-square"></div>
+                        <div class="logo-square"></div>
+                    </div>
+                    <div class="logo-text">TheCubeFactory</div>
+                </div>
+                
+                <h1 class="welcome-text">Welcome back</h1>
+                <p class="subtitle">Please enter your details</p>
+                
+                <form>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="password" name="password" placeholder="••••••••" required>
+                        </div>
+                    </div>
+                    
+                    <!-- Ajout de la sélection du type d'utilisateur -->
+                    <div class="user-type-container">
+                        <label class="main-label">Type d'utilisateur</label>
+                        <div class="user-type-options">
+                            <div class="user-type-option">
+                                <input type="radio" id="client" name="user-type" value="client" checked>
+                                <label for="client">Client</label>
+                            </div>
+                            <div class="user-type-option">
+                                <input type="radio" id="technicien" name="user-type" value="technicien">
+                                <label for="technicien">Technicien</label>
+                            </div>
+                            <div class="user-type-option">
+                                <input type="radio" id="administrateur" name="user-type" value="administrateur">
+                                <label for="administrateur">Administrateur</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <button type="submit" class="signin-btn">
+                        <i class="fas fa-sign-in-alt"></i> Sign in
+                    </button>
+                    
+                    <a href="forgot-password.html" class="forgot">Forgot password</a>
+                    <button type="button" class="google-btn">
+                        <i class="fab fa-google"></i> Sign in with Google
+                    </button>
+                    
+                    <div class="forgot-password">
+                        <p class="signup-text">
+                            Don't have an account? <a href="signup.html">Sign up</a>
+                        </p>
+                    </div>
+                    
+                </form>
+            </div>
+            
+            <div class="illustration-container">
+                <div class="illustration">
+                    <!-- Les éléments décoratifs seront ajoutés via CSS -->
+                    <div class="decoration-circle circle-1"></div>
+                    <div class="decoration-circle circle-2"></div>
+                    <div class="decoration-square square-1"></div>
+                    <div class="decoration-square square-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Gestion d'incidente. Tous droits réservés.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
